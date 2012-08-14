@@ -13,7 +13,7 @@ module QC
     # ModuleMethods
     mattr_accessor :default_queue
     def self.default_queue
-      @@default_queue||"mailer"
+      @@default_queue || QC::QUEUE || "default"
     end
 
     # ClassMethods

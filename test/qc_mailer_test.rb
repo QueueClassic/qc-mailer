@@ -23,8 +23,8 @@ describe 'QC::Mailer' do
   end
 
   describe "default_queue" do
-    it "should be 'mailer'" do
-      QC::Mailer.default_queue.must_equal("mailer")
+    it "should be 'default'" do
+      QC::Mailer.default_queue.must_equal("default")
     end
   end
 
@@ -45,8 +45,8 @@ describe 'QC::Mailer' do
     end
 
     it "set at class level" do
-      QC::Mailer.default_queue.must_equal("mailer")
-      Rails3Mailer.queue_name.must_equal("mailer")
+      QC::Mailer.default_queue.must_equal("default")
+      Rails3Mailer.queue_name.must_equal("default")
       PriorityMailer.queue_name.must_equal('priority-mailer')
     end
   end
