@@ -1,12 +1,13 @@
-QueueClassic ActionMailer
+QueueClassic Mailer
 ==================
 
 Add to a Rails 3.x project to send email in the background using QueueClassic.
 
+This gem was inspired by ResqueMailer, https://github.com/zapnap/resque_mailer
+
 **WARNING: USE AT OWN RISK! THIS GEM IS CONSIDERED EXTREME ALPHA!**
 
-<!-- [![Build Status](https://secure.travis-ci.org/zerobearing2/qc-mailer.png)](http://travis-ci.org/zerobearing2/qc-mailer) -->
-<!--[![Dependency Status](https://gemnasium.com/zerobearing2/qc-mailer.png)](https://gemnasium.com/zerobearing2/qc-mailer)-->
+[![Build Status](https://secure.travis-ci.org/zerobearing2/qc-mailer.png)](http://travis-ci.org/zerobearing2/qc-mailer)
 
 Usage
 -----

@@ -16,11 +16,13 @@ Gem::Specification.new do |gem|
   gem.version       = QC::Mailer::VERSION
 
   # specify any dependencies here; for example:
-  gem.add_runtime_dependency "activesupport",   "~> 3.1.7"
+  gem.add_runtime_dependency "activesupport",   "~> 3.0"
+  gem.add_runtime_dependency "actionmailer",    "~> 3.0"
   gem.add_runtime_dependency "i18n",            "~> 0.6.0"
   gem.add_runtime_dependency "queue_classic",   "~> 2.0.1"
 
   gem.add_development_dependency "minitest", "~> 3.3.0"
+  gem.add_development_dependency "minitest-reporters"
   gem.add_development_dependency 'rake'
   gem.add_development_dependency "pry"
 end
