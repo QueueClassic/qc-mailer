@@ -20,6 +20,26 @@ Add to Gemfile
 
     gem "qc-mailer"
 
+Include QC::Mailer in your ActionMailer subclass(es) like this:
+
+```ruby
+class MyMailer < ActionMailer::Base
+  include QC::Mailer
+end
+```
+
+Now, when ```MyMailer.subject_email(params).deliver``` is called, an entry will be created in the job queue.
+
+Note that you can still have mail delivered synchronously by using the bang method variant:
+```ruby
+MyMailer.subject_email(params).deliver!
+```
+
+If you want to set a different default queue name for your mailer, you can change the default_queue property like so:
+```ruby
+# config/initializers/qc_mailer.rb
+QC::Mailer.default_queue = 'application_specific_mailer'
+```
 
 TODO
 ----
