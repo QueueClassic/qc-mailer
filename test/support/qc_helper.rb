@@ -20,4 +20,8 @@ module QCHelper
     QC::Conn.disconnect
   end
 
+  def enqueue_stub
+    proc{|klass, *args| klass.send(*args) }
+  end
+
 end

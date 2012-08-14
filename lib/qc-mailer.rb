@@ -1,5 +1,6 @@
-require "qc-mailer/version"
 require "active_support/concern"
+require "qc-mailer/version"
+require "qc-mailer/message_decoy"
 
 module QC
   module Mailer
@@ -12,16 +13,33 @@ module QC
     # ModuleMethods
     mattr_accessor :default_queue
     def self.default_queue
-      @@default_queue||"default"
+      @@default_queue||"mailer"
     end
 
+    # ClassMethods
     module ClassMethods
-      def queue
-        @queue || QC::Mailer.default_queue
+      def queue_name
+        @queue_name || QC::Mailer.default_queue
       end
 
-      def queue=(val)
-        @queue = val
+      def queue_name=(val)
+        @queue_name = val
+      end
+
+      def queue
+        @queue ||= QC::Queue.new(queue_name)
+      end
+
+      def deliver(method, *args)
+        send(method, *args).deliver!
+      end
+
+      def method_missing(method_name, *args)
+        if action_methods.include?(method_name.to_s)
+          MessageDecoy.new(self, method_name.to_s, *args)
+        else
+          super
+        end
       end
     end
 
