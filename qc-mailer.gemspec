@@ -4,8 +4,8 @@ require File.expand_path('../lib/qc-mailer/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["David Bradford"]
   gem.email         = ["david@zerobearing.com"]
-  gem.description   = %q{Add to a Rails 3.x project to send email in the background using QueueClassic.}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Rails plugin for sending asynchronous email with ActionMailer and QueueClassic.}
+  gem.summary       = %q{Rails plugin for sending asynchronous email with ActionMailer and QueueClassic.}
   gem.homepage      = "https://github.com/zerobearing2/qc-mailer"
 
   gem.files         = `git ls-files`.split($\)
