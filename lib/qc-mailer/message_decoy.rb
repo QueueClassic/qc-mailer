@@ -17,7 +17,7 @@ module QC
       end
 
       def deliver
-        @mailer_class.queue.enqueue(@mailer_class, "deliver", @method_name, *@args)
+        @mailer_class.queue.enqueue("#{@mailer_class}.deliver", @method_name, *@args)
       end
 
       def deliver!
