@@ -13,5 +13,8 @@ require 'action_mailer'
 require 'qc-mailer'
 
 MiniTest::Reporters.use! [MiniTest::Reporters::SpecReporter.new]
+
 ActionMailer::Base.delivery_method = :test
+# ActionMailer::Base.perform_deliveries = false
+
 Dir[File.dirname(__FILE__) + "/support/**/*.rb"].each {|f| require f}

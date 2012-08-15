@@ -21,7 +21,11 @@ module QCHelper
   end
 
   def enqueue_stub
-    proc{|klass, *args| klass.send(*args) }
+    proc do |method, *args| 
+      klass = eval(method.split(".").first)
+      msg = method.split(".").last
+      klass.send(msg, *args)
+    end 
   end
 
 end
