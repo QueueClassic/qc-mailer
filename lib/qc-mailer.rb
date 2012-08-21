@@ -36,7 +36,7 @@ module QC
 
       def method_missing(method_name, *args)
         if action_methods.include?(method_name.to_s)
-          MessageDecoy.new(self, method_name.to_s, *args)
+          MessageDecoy.new(self, method_name, *args)
         else
           super
         end

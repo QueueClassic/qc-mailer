@@ -7,9 +7,9 @@ module QC
       delegate :to_s, :to => :actual_message
 
       def initialize(mailer_class, method_name, *args)
-        @mailer_class = mailer_class
-        @method_name = method_name
-        *@args = *args
+        @mailer_class   = mailer_class
+        @method_name    = method_name.to_s
+        *@args          = *args
       end
 
       def actual_message
