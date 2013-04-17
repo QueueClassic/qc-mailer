@@ -1,7 +1,5 @@
-# test/test_helper.rb
-
 ENV["TEST"] = 'true'
-ENV["DATABASE_URL"] ||= "postgres:///queue_classic_test"
+ENV["DATABASE_URL"] ||= "postgres://localhost/queue_classic_test"
 
 $:.unshift File.expand_path("../../lib")
 require 'rubygems'
