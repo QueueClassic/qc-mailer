@@ -1,1 +1,2 @@
 rvm use 2.1.0@qc-mailer --create
+rvm use 2.0.0@qc-mailer --create
