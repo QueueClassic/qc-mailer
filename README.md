@@ -1,7 +1,9 @@
 QueueClassic Mailer
 ===================
 
-Add to a Rails 3.x project to send email in the background using QueueClassic. This gem was inspired by ResqueMailer, https://github.com/zapnap/resque_mailer. This is a fork from the original maintained by [Rainforest QA](https://github.com/rainforestapp).
+Add to a Rails 3.x project to send email in the background using QueueClassic.
+
+This gem was inspired by ResqueMailer, https://github.com/zapnap/resque_mailer
 
 **WARNING: USE AT OWN RISK! THIS GEM IS CONSIDERED EXTREME ALPHA!**
 
