@@ -5,7 +5,8 @@ Add to a Rails 3.x project to send email in the background using QueueClassic. T
 
 **WARNING: USE AT OWN RISK! THIS GEM IS CONSIDERED EXTREME ALPHA!**
 
-[![Build Status](https://secure.travis-ci.org/rainforestapp/qc-mailer.png)](http://travis-ci.org/rainforestapp/qc-mailer)
+[![Build Status](https://secure.travis-ci.org/zerobearing2/qc-mailer.png)](http://travis-ci.org/zerobearing2/qc-mailer)
+[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/zerobearing2/qc-mailer)
 
 Usage
 -----
