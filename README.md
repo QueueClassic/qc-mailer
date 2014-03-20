@@ -8,7 +8,7 @@ This gem was inspired by ResqueMailer, https://github.com/zapnap/resque_mailer
 **WARNING: USE AT OWN RISK! THIS GEM IS CONSIDERED EXTREME ALPHA!**
 
 [![Build Status](https://secure.travis-ci.org/zerobearing2/qc-mailer.png)](http://travis-ci.org/zerobearing2/qc-mailer)
-[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/zerobearing2/qc-mailer)
+[![Code Climate](https://codeclimate.com/github/zerobearing2/qc-mailer.png)](https://codeclimate.com/github/zerobearing2/qc-mailer)
 
 Usage
 -----
