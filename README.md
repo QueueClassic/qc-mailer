@@ -1,5 +1,5 @@
 QueueClassic Mailer
-==================
+===================
 
 Add to a Rails 3.x project to send email in the background using QueueClassic.
 
@@ -40,6 +40,19 @@ If you want to set a different default queue name for your mailer, you can chang
 ```ruby
 # config/initializers/qc_mailer.rb
 QC::Mailer.default_queue = 'application_specific_mailer'
+```
+
+Development
+-----------
+
+To get a working development environment, do the following;
+
+```bash
+git clone https://github.com/rainforestapp/qc-mailer.git
+cd qc-mailer
+bundle
+createdb queue_classic_test
+rake
 ```
 
 TODO

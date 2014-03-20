@@ -1,2 +1,2 @@
-rvm_gemset_create_on_use_flag=1
-rvm use 1.9.2@qc-mailer
+rvm use 2.1.0@qc-mailer --create
+rvm use 2.0.0@qc-mailer --create
